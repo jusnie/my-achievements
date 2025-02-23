@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Achievements</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+<div id="loading-screen">
+    <h2>please do not share this link</h2>
+</div>
+    <header>
+    <video autoplay loop muted playsinline id="background-video">
+        <source src="background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+        <h1>My Achievements</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Platform</a></li>
+                <li><a href="#awards">Titles</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Welcome!</h2>
+        <p>I'm <strong>Juanie Cuenca</strong>, a student at Gen. T. Deleon National High School. This website highlights my projects, achievements only.</p>
+
+<p>High school isn't just about academics it’s also about creating memories, enjoying, have fun with friends and making it happiest experience in our life.</p>
+
+<p>Feel free to explore thank you for visiting!</p>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <img src="myphoto.jpg" alt="My Photo" class="profile-pic">
+        <p>Hi, i'm <strong>Juanie Cuenca</strong> a student at Gen. T. Deleon National High School passionate about technology, innovation, and leadership.</p>
+
+<p>i started learning programming and Arduino projects during the pandemic which led me to explore web development and artificial intelligence chatbots. back in Grade 9 (2023), i developed an AI chatbot which i later sold to a US-based company due to the high cost of maintaining domain.</p>
+
+<p>currently as a Grade 11 student i am developing our school website, which will be integrated with an AI assistant. This platform aims to help students and parents with online school registration providing a more convenient alternative to walk-in applications.</p>
+
+<p>additionally, I am working on GenDance an RFID-based attendance system that will track student attendance and notify teachers if students leave during class hours if i win the election, i plan to fully implement these tech innovations to modernize our school.</p>
+
+<p>as a tech-driven leader, my goal is to make technology more accessible, improve student engagement and create a more connected and innovative school environment.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Platform</h2>
+        <p>1. <strong>Technology for All Students</strong>
+
+Introduce basic technology education for students.
+
+Provide training sessions on digital literacy and cybersecurity.</p>
+
+
+<p>2.<strong> GenDance: Smart Attendance System</strong>
+
+Implement RFID-based attendance for easy tracking.
+
+Develop an alert system to notify teachers if students leave during class hours.</p>
+
+
+<p>3. <strong>School Website & AI Assistant</strong>
+
+Create an official school website for announcements, schedules, and student resources.
+
+Integrate an AI assistant to help students with common inquiries.</p>
+
+
+<p>4. <strong>Inclusive & Safe Spaces</strong>
+
+Establish a dedicated LGBTQ+ Comfort Room (CR) to ensure a discrimination-free space.</p>
+
+
+<p>5. <strong>Donation Drive for Students in Need</strong>
+
+Organize a donation program for school supplies, uniforms, and other necessities.</p>
+
+
+<p>6.<strong> More Exciting School Events</strong>
+
+Host eSports tournaments to encourage student engagement.
+
+Arrange talent showcases to highlight student creativity and skills.
+
+Improve school celebrations and activities to make them more enjoyable.</p>
+    </section>
+
+    <section id="awards">
+        <h2>Title Achievements</h2>
+        <p><p>Grade 9 President</p>
+
+<p>Outstanding Leadership in Museo Pambata</p>
+
+<p>Grade 11 Classroom President</p>
+
+<p>Developed AI Chatbot in 2023 (at 15 years old)</p>
+
+<p>Won Street Dance Tatak Pinoy 2019</p>
+
+<p>Won Best Editor in 2020 (Edit Pinas)</p>
+
+<p>Won Alight Motion Editor in Edit Pinas</p>
+
+<p>Earned from TikTok Editing (363K Followers) in 2021</p>
+
+<p>Created Grading System (Demo)</p>
+
+<p>Developed Pixelated Games</p>
+
+<p>Graduated in Robotics (UE Caloocan)</p>
+
+<p>Won Against Quezon City in Hiphop Dance</p>
+
+<p>Completed Programming Course</p>
+
+<p>Led Classmates in Galaw Pilipinas and Won</p>
+
+<p>Developed School Websites</p>
+
+<p>Developed Arduino Projects</p>
+
+<p>Best in Honesty (Grade 9)</p>
+
+
+</p>
+    </section>
+
+    <section id="gallery">
+    <h2>Gallery</h2>
+    <p>School Website are still developing here some of my projects:</p>
+    <img src="attendancesystem.jpg" alt="Attendance System" class="gallery-img" 
+         onclick="openPreview('attendancesystem.jpg', 'An RFID-based attendance system that tracks student arrivals and alerts teachers if students leave during class hours.')">
+    <img src="trash.jpg" alt="Trash Automated System" class="gallery-img" 
+         onclick="openPreview('trash.jpg', 'Automate waste disposal with our simple Arduino-powered trash cans, designed specifically for school faculties.')">
+</section>
+
+<!-- Image Preview Modal -->
+<div id="imagePreview" class="modal">
+    <span class="close-btn" onclick="closePreview()">&times;</span>
+    <img id="previewImg" class="modal-content">
+    <p id="previewDescription" class="image-description"></p>
+</div>
+    </section>
+
+
+    <footer>
+        <p>&copy; 2025 Juanie Cuenca. All rights reserved.</p>
+    </footer>
+</body>
+</html>

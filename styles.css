@@ -1,0 +1,215 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    height: 50vh; /* Adjust height as needed */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column; /* Stacks elements vertically */
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+/* Background Video */
+#background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Ensure full header coverage */
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* Overlay for readability */
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+}
+
+/* Title Centering */
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    position: relative;
+    z-index: 1;
+}
+
+/* Navigation Centered Below Title */
+nav {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    margin-top: -10px; /* Adjust spacing */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    border: 2px solid white;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    background: white;
+    color: black;
+}
+
+/* Section Styling */
+section {
+    padding: 2rem;
+    background: white;
+    margin: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 0rem;
+    background: #007bff;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+/* Background Video */
+#footb-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Ensure full header coverage */
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .gallery-img {
+        width: 80%;
+        max-width: 200px;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .profile-pic {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 10px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+}
+
+/* Style for gallery images */
+.gallery-img {
+    width: 150px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery-img:hover {
+    transform: scale(1.1);
+}
+
+/* Modal (Full-Screen Preview) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+}
+
+.modal-content {
+    max-width: 90%;
+    max-height: 80vh;
+    margin-top: 5%;
+    border-radius: 10px;
+}
+
+/* Close Button */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+}
+#loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 0.5s ease;
+    overflow: hidden;
+}
+
+#loading-screen h2 {
+    font-size: 1.5rem;
+    color: #333;
+}
+.image-description {
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 10px;
+}
